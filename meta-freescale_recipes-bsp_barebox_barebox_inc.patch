@@ -1,7 +1,7 @@
-diff --git a/recipes-bsp/barebox/barebox.inc b/recipes-bsp/barebox/barebox.inc
+diff --git a/sources/meta-freescale/recipes-bsp/barebox/barebox.inc b/sources/meta-freescale/recipes-bsp/barebox/barebox.inc
 index 20e5a4f..a8177ed 100644
---- a/recipes-bsp/barebox/barebox.inc
-+++ b/recipes-bsp/barebox/barebox.inc
+--- a/sources/meta-freescale/recipes-bsp/barebox/barebox.inc
++++ b/sources/meta-freescale/recipes-bsp/barebox/barebox.inc
 @@ -16,13 +16,15 @@ BAREBOX_BINARY ?= "barebox.bin"
  BAREBOX_IMAGE ?= "barebox-${MACHINE}-${PV}-${PR}.bin"
  BAREBOXENV_BIN ?= "bareboxenv-${MACHINE}-${PV}-${PR}.bin"
