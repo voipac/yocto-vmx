@@ -11,7 +11,7 @@ DEPENDS += "lzop-native"
 PV = "v2017.12.0"
 
 SRCBRANCH = "barebox-v2017.12.0"
-SRCREV = "87a0ec857e86ae525b047a526b9e4407ebf6a186"
+SRCREV = "afd81114589256ffbb6c9eb36973e051b252488d"
 BAREBOX_SRC ?= "git://github.com/voipac/barebox.git;protocol=git"
 SRC_URI = "${BAREBOX_SRC};branch=${SRCBRANCH} file://defconfig"
 
