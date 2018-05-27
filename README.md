@@ -24,7 +24,7 @@ To get the BSP you need to have `repo` installed and use it as:
     
       <remote fetch="git://github.com/Voipac" name="voipac"/>
     
-      <project remote="voipac" revision="master" name="meta-freescale-vmx" path="sources/meta-freescale-vmx">
+      <project remote="voipac" revision="meta-freescale-vmx-rocko" name="yocto-vmx" path="sources/meta-freescale-vmx">
         <copyfile src="vmx-setup.sh" dest="vmx-setup.sh"/>
       </project>
     </manifest>
@@ -35,6 +35,7 @@ To get the BSP you need to have `repo` installed and use it as:
 
 ## Add Voipac meta layer into BSP
     source vmx-setup.sh
+    patch -p1 < sources/meta-freescale-vmx/meta-freescale_recipes-bsp_barebox_barebox_inc.patch
 
 # Building images
     cd ~/workdir/vmx/yocto/fsl-community-bsp
