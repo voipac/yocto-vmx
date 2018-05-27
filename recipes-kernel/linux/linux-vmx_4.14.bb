@@ -10,7 +10,7 @@ DEPENDS += "lzop-native bc-native"
 
 SRCBRANCH = "linux-4.14"
 LOCALVERSION = "-yocto"
-SRCREV = "4a31b3df364d282eab49a24255894ec09b84286f"
+SRCREV = "abdb349597213926c95c04451cd5b32440af6d7b"
 KERNEL_SRC ?= "git://github.com/voipac/linux.git;protocol=git"
 SRC_URI = "${KERNEL_SRC};branch=${SRCBRANCH} file://defconfig"
 
