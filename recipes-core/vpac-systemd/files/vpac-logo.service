@@ -1,6 +1,0 @@
-[Unit]
-Description=start initscript upon first boot
-
-[Service]
-Type=simple
-ExecStart=/bin/sh -c 'sleep 5 ; /usr/sbin/vpac-logo.sh'

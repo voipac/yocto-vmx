@@ -25,6 +25,8 @@ INITSCRIPT_PACKAGES = "${PN}-logo"
 INITSCRIPT_NAME_${PN}-logo = "vpac-logo.sh"
 INITSCRIPT_PARAMS_${PN}-logo = "start 99 5 ."
 
+PACKAGES =+ "${PN} ${PN}-logo"
+
 FILES_${PN}-logo = " \
     ${sysconfdir}/init.d/vpac-logo.sh \
 "
