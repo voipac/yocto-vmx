@@ -1,4 +1,4 @@
-# Copyright (C) 2016 Voipac
+# Copyright (C) 2016-2018 Voipac
 # Released under the MIT license (see COPYING.MIT for the terms)
 
 SUMMARY = "Linux kernel for for Voipac VMX25 SoM Evaluation Kit"
@@ -10,7 +10,7 @@ DEPENDS += "lzop-native bc-native"
 
 SRCBRANCH = "linux-4.14"
 LOCALVERSION = "-yocto"
-SRCREV = "abdb349597213926c95c04451cd5b32440af6d7b"
+SRCREV = "cb771f20aa9c28b3206a1e21ce72f95db487ac65"
 KERNEL_SRC ?= "git://github.com/voipac/linux.git;protocol=git"
 SRC_URI = "${KERNEL_SRC};branch=${SRCBRANCH} file://defconfig"
 
